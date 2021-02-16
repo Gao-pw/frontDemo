@@ -1,0 +1,129 @@
+header {
+    width: 100%;
+    background-color:#FF9966;
+}
+
+header span {
+    font-style: italic;
+    font-size: 16px;
+}
+
+footer{
+    position:fixed;
+    width: 100%;
+    background-color: black;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer span {
+    display: block;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+header > div {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+header div div {
+    display: flex;
+}
+
+input[type="text"] {
+    width: 40vw;
+}
+
+main{
+    position: relative;
+    top: 0px;
+    height: calc(89vh - 40px);
+}
+
+ul{
+    padding-left: 20px;
+}
+
+#wait {
+    height: calc((89vh - 40px) / 2);
+    overflow-y: auto;
+    margin: 0;
+}
+
+#done {
+    height: calc((89vh - 40px) / 2);
+    overflow-y: auto;
+    margin: 0;
+}
+
+#wait li {
+    list-style-type: none;
+    display: flex;
+    height: 5vh;
+    width: 80vw;
+    padding-left: 10px;
+    border-left: 2px solid #FF6666;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#wait li input {
+    display: flex;
+    flex:1 1 auto;
+    margin: 0;
+}
+#wait li span{
+    /* flex:5 0 30vw; */
+    width: 25vh;
+    margin-right: 10px;
+    overflow-x: auto;
+}
+
+#done li {
+    list-style-type: none;
+    display: flex;
+    height: 5vh;
+    width: 80vw;
+    padding-left: 10px;
+    border-left: 2px solid #FFCCCC;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#done li input {
+    display: flex;
+    flex:1 1 auto;
+    vertical-align : middle;
+    margin: 0;
+}
+#done li span{
+    width: 25vh;
+    margin-right: 10px;
+    overflow-x: auto;
+}
+
+#done li :nth-child(3){
+    padding-right: 5vw;
+    display: block;
+    text-align: right;
+}
+
+#wait li :nth-child(3){
+    padding-right: 5vw;
+    display: block;
+    text-align: right;
+}
+
+
+a {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width,minimum-scale = 1.0,maximun-scale=1.0,user-scalable = no">
+        <title>toDoList</title>
+        <style>
+            @import "todo/todoList.css";
+        </style>
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.2/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div>
+                    <span>toDoList</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="输入要做的事~(15字)">
+                    <input type="button" value="添加" id="add">
+                </div>
+            </div>
+        </header>
+        <main>
+            <ul id="wait"><h2>未完成&nbsp;&nbsp;👨‍💻</h2></ul>
+            <ul id="done"><h2>已完成&nbsp;&nbsp;🥰</h2></ul>
+        </main>
+        <footer>
+            <span>2021 &copy; <a href="https://www.siroi.top">siroi</a></span>
+        </footer>
+    </body>
+    <script src="todo/todo.js"></script>
+</html>
